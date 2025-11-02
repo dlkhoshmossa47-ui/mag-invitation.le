@@ -1,43 +1,110 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Service Compensation Invitation</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAG Syria Safeguarding & Well-Being Day</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=lux1" />
+  <meta name="color-scheme" content="light only">
 </head>
 <body>
-    <div class="envelope" onclick="this.classList.toggle('open')">
-        <div class="flap">
-            <div class="card-content">
-                <img src="assets/logo.png" alt="Organization Logo">
-                <h2>Service Compensation Invitation - 2019</h2>
-                <p>Dear colleagues,</p>
-                <p>Please fill out your information in the survey by clicking the link below:</p>
-                <p><strong>Survey Link</strong></p>
-                <p>Please read the instructions carefully before proceeding.</p>
-                <button onclick="window.print()">Print</button>
-                <hr>
-                <div class="card-content rtl">
-                    <img src="assets/logo.png" alt="شعار المنظمة">
-                    <h2>دعوة تعبئة استبيان تعويض نهاية الخدمة لعام 2019</h2>
-                    <p>السلام عليكم إخوتي وأخواتي،</p>
-                    <p>يرجى ملء معلوماتكم في الاستبيان من خلال الضغط على الرابط التالي:</p>
-                    <p><strong>رابط الاستبيان</strong></p>
-                    <p>يرجى قراءة التعليمات بعناية قبل البدء.</p>
-                    <button onclick="window.print()">طباعة</button>
-                </div>
-            </div>
+  <div class="hero">
+    <div class="glow a"></div>
+    <div class="glow b"></div>
+
+    <header class="brand">
+      <!-- ضعي شعار المنظمة هنا (الملف داخل مجلد assets) -->
+      <img src="assets/mag_logo.jpg" alt="MAG Logo">
+    </header>
+
+    <main class="card glass" role="main" aria-labelledby="inv-title-en">
+      <!-- EN SECTION -->
+      <section class="section en" dir="ltr">
+        <h1 id="inv-title-en" class="headline">
+          MAG Syria Safeguarding &amp; Well-Being Day
+        </h1>
+        <p class="subtitle">Recharge • Reconnect • Re-energize</p>
+
+        <ul class="meta">
+          <li><span class="ico" aria-hidden="true">📅</span> <strong>Date:</strong> <span>04 November</span></li>
+          <li><span class="ico" aria-hidden="true">⏰</span> <strong>Time:</strong> <span>09:00 – 15:00 (across all bases)</span></li>
+          <li><span class="ico" aria-hidden="true">📍</span> <strong>Venue:</strong> <span>[Insert venue per location]</span></li>
+          <li><span class="ico" aria-hidden="true">🏙️</span> <strong>Erbil:</strong> <span></span></li>
+          <li><span class="ico" aria-hidden="true">🏛️</span> <strong>Raqqa:</strong> <span>Alshate’e Restaurant</span></li>
+          <li><span class="ico" aria-hidden="true">🏛️</span> <strong>Hasaka:</strong> <span>Samarkand (rented venue)</span></li>
+        </ul>
+
+        <h3 class="h3"><span class="ico" aria-hidden="true">🧭</span> Logistics &amp; Attendance</h3>
+        <p>All staff will depart from the office and Ops base to the venue within their respective base.</p>
+
+        <h3 class="h3"><span class="ico" aria-hidden="true">🧩</span> What to Expect</h3>
+        <ul class="bullets two-col">
+          <li>Fun refresher on G &amp; Code of Conduct</li>
+          <li>Ethical &amp; positive team-behaviour activities</li>
+          <li>Chair-based wellbeing mini-session</li>
+          <li>Peer appreciation &amp; values celebration</li>
+          <li>Music, smiles, and team energy</li>
+          <li>Refreshments</li>
+        </ul>
+
+        <p class="em"><strong>Dress Code:</strong> Business casual / Comfortable</p>
+
+        <div class="cta-row">
+          <button class="btn silver" onclick="window.print()" aria-label="Print or save PDF">
+            ⎙ Print / Save PDF
+          </button>
         </div>
-    </div>
-    <div class="fallback">
-        <h2>Service Compensation Invitation - 2019</h2>
-        <p>Please fill out your information in the survey by clicking the link below:</p>
-        <p><strong>Survey Link</strong></p>
-        <hr>
-        <h2>دعوة تعبئة استبيان تعويض نهاية الخدمة لعام 2019</h2>
-        <p>يرجى ملء معلوماتكم في الاستبيان من خلال الضغط على الرابط التالي:</p>
-        <p><strong>رابط الاستبيان</strong></p>
-    </div>
+
+        <p class="closing">We look forward to seeing you there. Please confirm your attendance with the HR Team.</p>
+        <p class="tagline">MAG Syria — Together we make land safe, together we thrive.</p>
+      </section>
+
+      <hr class="divider"/>
+
+      <!-- AR SECTION -->
+      <section class="section ar" dir="rtl" lang="ar" aria-labelledby="inv-title-ar">
+        <h1 id="inv-title-ar" class="headline">يوم السلامة والرفاه في MAG سوريا</h1>
+        <p class="subtitle">استعد نشاطك • تواصل • تجدّد</p>
+
+        <ul class="meta">
+          <li><span class="ico" aria-hidden="true">📅</span> <strong>التاريخ:</strong> <span>04 نوفمبر</span></li>
+          <li><span class="ico" aria-hidden="true">⏰</span> <strong>الوقت:</strong> <span>09:00 – 15:00 (في جميع القواعد)</span></li>
+          <li><span class="ico" aria-hidden="true">📍</span> <strong>المكان:</strong> <span>[يُحدَّد حسب كل موقع]</span></li>
+          <li><span class="ico" aria-hidden="true">🏙️</span> <strong>أربيل:</strong> <span></span></li>
+          <li><span class="ico" aria-hidden="true">🏛️</span> <strong>الرقة:</strong> <span>مطعم الشاطئ</span></li>
+          <li><span class="ico" aria-hidden="true">🏛️</span> <strong>الحسكة:</strong> <span>سمركند (قاعة مُستأجرة)</span></li>
+        </ul>
+
+        <h3 class="h3"><span class="ico" aria-hidden="true">🧭</span> اللوجستيات والحضور</h3>
+        <p>سينطلق جميع الموظفين من المكتب وقاعدة العمليات إلى موقع الفعالية ضمن كل قاعدة.</p>
+
+        <h3 class="h3"><span class="ico" aria-hidden="true">🧩</span> ماذا يتضمن اليوم</h3>
+        <ul class="bullets two-col">
+          <li>تحديث تفاعلي على مدوّنة قواعد السلوك</li>
+          <li>أنشطة سلوكية تعزّز الأخلاقيات الإيجابية وروح الفريق</li>
+          <li>جلسة رفاهية قصيرة أثناء الجلوس على الكراسي</li>
+          <li>تقدير الزملاء والاحتفاء بالقيم المؤسسية</li>
+          <li>موسيقى وأجواء لطيفة وطاقة فريق إيجابية</li>
+          <li>ضيافة ومشروبات</li>
+        </ul>
+
+        <p class="em"><strong>اللباس:</strong> لباس عمل غير رسمي أنيق / مريح</p>
+
+        <div class="cta-row">
+          <button class="btn silver" onclick="window.print()" aria-label="طباعة أو حفظ PDF">
+            ⎙ طباعة / حفظ PDF
+          </button>
+        </div>
+
+        <p class="closing">نتطلّع لرؤيتكم. يرجى تأكيد الحضور لدى فريق الموارد البشرية.</p>
+        <p class="tagline">MAG سوريا — معًا نجعل الأرض آمنة، ومعًا نزداد ازدهارًا.</p>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <small>© MAG Syria</small>
+    </footer>
+  </div>
 </body>
 </html>
