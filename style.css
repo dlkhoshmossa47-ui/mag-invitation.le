@@ -1,0 +1,69 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #e0f7ff, #cce0ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.envelope {
+    width: 400px;
+    height: 250px;
+    position: relative;
+    perspective: 1000px;
+}
+.flap {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 2px solid #0077b6;
+    border-radius: 10px;
+    transform-origin: top;
+    transition: transform 1s;
+    overflow: hidden;
+}
+.envelope.open .flap {
+    transform: rotateX(-180deg);
+}
+.card-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 10px;
+    text-align: left;
+    direction: ltr;
+}
+.card-content img {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+.card-content.rtl {
+    direction: rtl;
+    text-align: right;
+}
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fallback {
+    display: none;
+}
+@media print {
+    .envelope, .flap {
+        display: none;
+    }
+    .fallback {
+        display: block;
+    }
+}
